@@ -1,0 +1,11 @@
+.postwork_content {
+    display: flex;
+}
+
+.postwork_button {
+    height: 40px;
+}
+
+.postwork_input {
+    width: 40px;
+}

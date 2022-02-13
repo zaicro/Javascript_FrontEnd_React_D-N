@@ -1,0 +1,21 @@
+.App-menu {
+    text-align: center;
+}
+
+.App-menu a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+    display: inline-block;
+    width: 10%;
+    padding: 5px 10px;
+    background-color: #0D5CAB;
+    border: 1px solid #0D5CAB;
+    text-align: center;
+    color: #fff;
+}
+
+.App-menu a:hover {
+    background-color: #fff;
+    color: #000;
+}

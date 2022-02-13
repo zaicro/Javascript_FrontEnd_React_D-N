@@ -1,0 +1,25 @@
+.Superman,
+.Batman,
+.Flash,
+.Wonder-Woman {
+    display: flex;
+    width: 30%;
+    height: 60rem;
+    margin: 4rem;
+    flex-direction: column;
+}
+
+.Batman {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.Wonder-Woman {
+    background-color: rgb(226, 11, 11);
+    color: rgb(0, 0, 0);
+}
+
+.Superman {
+    background-color: rgb(8, 113, 173);
+    color: rgb(24, 23, 23);
+}

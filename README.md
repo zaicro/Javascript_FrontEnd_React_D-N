@@ -7,4 +7,4 @@ PostWork
 #
 Trabajo Final
 - TrabajoFinal/work (Netflix)
-    * Pwa, Mui, Router, Props ,State, componentes reutilizados
+    * Pwa, Mui, Router, Props ,State, Responsive, componentes reutilizados

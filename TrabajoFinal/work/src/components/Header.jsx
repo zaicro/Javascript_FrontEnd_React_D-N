@@ -1,9 +1,7 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { OpcionesMenu } from '../helpers/constants'
 import { Avatar, AppBar, Box, Button, Container, IconButton, Menu, MenuIcon, MenuItem, Toolbar, Tooltip, Typography } from '../components/Material';
-
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 export const Header = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -22,6 +20,12 @@ export const Header = () => {
 
     const handleCloseUserMenu = () => {
         setAnchorElUser(null);
+    };
+
+    const history = useHistory();
+    const IniciarSesion = () => {
+        setAnchorElUser(null);
+        history.push('/IniciarSesion')
     };
 
     return (
@@ -108,11 +112,9 @@ export const Header = () => {
                             open={Boolean(anchorElUser)}
                             onClose={handleCloseUserMenu}
                         >
-                            {settings.map((setting) => (
-                                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                                    <Typography textAlign="center">{setting}</Typography>
-                                </MenuItem>
-                            ))}
+                            <MenuItem key="1" onClick={IniciarSesion}>
+                                <Typography textAlign="center">Iniciar Sesión</Typography>
+                            </MenuItem>
                         </Menu>
                     </Box>
                 </Toolbar>
